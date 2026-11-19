@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Execution Methodology &amp; Phases — STRATAFORM</title>
+  <meta name="description" content="Discover STRATAFORM's 4-phase architectural engineering methodology: from geotechnical deep foundations to turnkey luxury commissioning.">
+
+  <!-- Google Fonts: Syne, Plus Jakarta Sans, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Syne:wght@700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body data-page="process">
+
+  <!-- Subtle Blueprint Grid Overlay -->
+  <div class="blueprint-grid-overlay" aria-hidden="true"></div>
+
+  <!-- Custom Precision Cursor Follower -->
+  <div class="custom-cursor" id="custom-cursor" aria-hidden="true"></div>
+  <div class="custom-cursor-follower" id="custom-cursor-follower" aria-hidden="true"></div>
+
+  <!-- TOP NAVBAR -->
+  <nav class="navbar" id="main-navbar">
+    <div class="nav-scroll-indicator" id="nav-scroll-indicator"></div>
+
+    <a href="index.html" class="brand-link">
+      <svg class="brand-monogram" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="STRATAFORM">
+        <path class="logo-draw-path" d="M24 4L42 14.4V35.2L24 45.6L6 35.2V14.4L24 4Z" stroke="#FFB84D" stroke-width="1.8" stroke-linejoin="round"/>
+        <path class="logo-draw-path" d="M24 4V45.6" stroke="#FFB84D" stroke-width="1.2"/>
+        <path class="logo-draw-path" d="M6 14.4L24 24.8L42 14.4" stroke="#FFD07B" stroke-width="1.2"/>
+        <path class="logo-draw-path" d="M24 24.8V45.6" stroke="#FF5A36" stroke-width="1.5"/>
+      </svg>
+      <span class="brand-name">STRATAFORM</span>
+    </a>
+
+    <!-- Top Menu Links -->
+    <ul class="nav-menu" id="nav-menu">
+      <li class="nav-item" data-nav="home"><a href="index.html" class="magnetic-btn">Home</a></li>
+      <li class="nav-item" data-nav="work"><a href="work.html" class="magnetic-btn">Work</a></li>
+      <li class="nav-item" data-nav="blueprint"><a href="blueprint.html" class="magnetic-btn">Blueprint</a></li>
+      <li class="nav-item active" data-nav="process"><a href="process.html" class="magnetic-btn">Process</a></li>
+      <li class="nav-item" data-nav="studio"><a href="studio.html" class="magnetic-btn">Studio</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <a href="inquire.html" class="btn-inquire magnetic-btn">Inquire</a>
+      <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle Navigation Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Full-Screen Glass Mobile Menu Drawer -->
+  <div class="mobile-nav-drawer" id="mobile-nav-drawer" aria-hidden="true" data-lenis-prevent>
+    <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(255, 255, 255, 0.08); padding-bottom: 20px;">
+      <span class="brand-name" style="font-size: 1.1rem; color: var(--accent-gold);">STRATAFORM</span>
+      <span style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--accent-cyan);">METHODOLOGY // 04</span>
+    </div>
+
+    <ul class="mobile-nav-list">
+      <li class="mobile-nav-item"><a href="index.html" class="mobile-nav-link" data-nav="home"><span>Home</span><span class="mobile-link-num">01</span></a></li>
+      <li class="mobile-nav-item"><a href="work.html" class="mobile-nav-link" data-nav="work"><span>Work</span><span class="mobile-link-num">02</span></a></li>
+      <li class="mobile-nav-item"><a href="blueprint.html" class="mobile-nav-link" data-nav="blueprint"><span>Blueprint</span><span class="mobile-link-num">03</span></a></li>
+      <li class="mobile-nav-item"><a href="process.html" class="mobile-nav-link active" data-nav="process"><span>Process</span><span class="mobile-link-num">04</span></a></li>
+      <li class="mobile-nav-item"><a href="studio.html" class="mobile-nav-link" data-nav="studio"><span>Studio</span><span class="mobile-link-num">05</span></a></li>
+    </ul>
+
+    <div class="mobile-drawer-footer">
+      <a href="inquire.html" class="btn-primary" style="width: 100%;">Inquire for Consultation &rarr;</a>
+      <div style="display: flex; justify-content: space-between; font-family: var(--font-mono); font-size: 0.7rem; color: var(--text-muted);">
+        <span>ZURICH &bull; LONDON &bull; NYC</span>
+        <span>&copy; 2026 STRATAFORM</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- PAGE HERO -->
+  <header class="page-hero">
+    <div class="container">
+      <div class="page-hero-breadcrumbs">
+        <span>STRATAFORM</span>
+        <span>/</span>
+        <span>METHODOLOGY</span>
+        <span>/</span>
+        <span style="color: var(--accent-cyan);">EXECUTION LIFECYCLE</span>
+      </div>
+      <h1 class="page-hero-title">Construction Phases &amp; Methodology</h1>
+      <p class="page-hero-subtitle">
+        A four-phase engineering discipline merging subterranean geological mastery with single-source turnkey delivery.
+      </p>
+
+      <div class="page-hero-stats">
+        <div class="hero-stat-badge">
+          <span class="hero-stat-label">DISCIPLINES INTEGRATED</span>
+          <span class="hero-stat-val">SINGLE-SOURCE EPC</span>
+        </div>
+        <div class="hero-stat-badge">
+          <span class="hero-stat-label">EXECUTION ACCURACY</span>
+          <span class="hero-stat-val" style="color: var(--accent-cyan);">&plusmn;0.00 MM TOLERANCE</span>
+        </div>
+        <div class="hero-stat-badge">
+          <span class="hero-stat-label">ENVIRONMENTAL BENCHMARK</span>
+          <span class="hero-stat-val">NET ZERO CARBON READY</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- PROCESS PHASES DEEP DIVE -->
+  <main class="section-wrapper" style="padding-top: 48px;">
+    <div class="container">
+
+      <div class="process-deep-grid process-grid phases-grid">
+
+        <!-- Phase 01 -->
+        <article class="process-deep-card">
+          <div>
+            <span class="bp-hud-badge" style="color: var(--accent-gold); border-color: rgba(255,184,77,0.4);">PHASE 01 // SUBTERRANEAN</span>
+            <h2 class="font-display" style="font-size: 2rem; color: #FFF; margin-top: 12px; text-transform: uppercase;">Geotechnical &amp; Deep Foundations</h2>
+            <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6; margin-top: 14px;">
+              Every STRATAFORM landmark is anchored directly into unyielding bedrock. We employ continuous flight auger micropiles, secant retaining walls, and a monolithic post-tensioned foundation mat to eradicate differential settlement across high-seismic zones.
+            </p>
+
+            <div style="margin-top: 24px; display: grid; grid-template-columns: 1fr 1fr; gap: 12px; font-family: var(--font-mono); font-size: 0.75rem;">
+              <div style="background: rgba(13, 14, 17, 0.6); padding: 12px; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+                <span class="text-muted" style="display: block;">SOCKETING DEPTH</span>
+                <strong style="color: var(--accent-cyan); font-size: 0.9rem;">38M – 48M BEDROCK</strong>
+              </div>
+              <div style="background: rgba(13, 14, 17, 0.6); padding: 12px; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+                <span class="text-muted" style="display: block;">CONCRETE SPEC</span>
+                <strong style="color: #FFF; font-size: 0.9rem;">C70/85 SELF-CONSOLIDATING</strong>
+              </div>
+              <div style="background: rgba(13, 14, 17, 0.6); padding: 12px; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+                <span class="text-muted" style="display: block;">PILE CAPACITY</span>
+                <strong style="color: #FFF; font-size: 0.9rem;">12,000 kN WORKING LOAD</strong>
+              </div>
+              <div style="background: rgba(13, 14, 17, 0.6); padding: 12px; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+                <span class="text-muted" style="display: block;">SETTLEMENT LIMIT</span>
+                <strong style="color: var(--accent-gold); font-size: 0.9rem;">&lt; 3.0 MM MAXIMUM</strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="process-card-blueprint-graphic">
+            <span style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--accent-cyan);">SCHEMATIC 01.A // PILE CAP &amp; BEDROCK SOCKET</span>
+            <svg viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <line x1="20" y1="40" x2="380" y2="40" stroke="#FFB84D" stroke-width="1.5" stroke-dasharray="4 4"/>
+              <text x="25" y="32" fill="#FFB84D" font-family="monospace" font-size="10">GROUND LEVEL &plusmn;0.00M</text>
+              <rect x="60" y="40" width="280" height="35" fill="rgba(255, 184, 77, 0.1)" stroke="#FFB84D" stroke-width="1.2"/>
+              <text x="140" y="62" fill="#FFF" font-family="monospace" font-size="11">C70 POST-TENSIONED MAT</text>
+              <!-- Piles -->
+              <line x1="100" y1="75" x2="100" y2="180" stroke="#00E5FF" stroke-width="3"/>
+              <line x1="180" y1="75" x2="180" y2="180" stroke="#00E5FF" stroke-width="3"/>
+              <line x1="260" y1="75" x2="260" y2="180" stroke="#00E5FF" stroke-width="3"/>
+              <line x1="340" y1="75" x2="340" y2="180" stroke="#00E5FF" stroke-width="3"/>
+              <line x1="20" y1="180" x2="380" y2="180" stroke="#00E5FF" stroke-width="1.5"/>
+              <text x="25" y="195" fill="#00E5FF" font-family="monospace" font-size="10">BASAL BEDROCK SOCKET -38.5M</text>
+            </svg>
+            <span style="font-family: var(--font-mono); font-size: 0.68rem; color: var(--text-muted);">CROSS-SECTION: 4X BORED CAST-IN-PLACE BEDROCK REINFORCEMENTS</span>
+          </div>
+        </article>
+
+        <!-- Phase 02 -->
+        <article class="process-deep-card">
+          <div>
+            <span class="bp-hud-badge" style="color: var(--accent-gold); border-color: rgba(255,184,77,0.4);">PHASE 02 // SUPERSTRUCTURE</span>
+            <h2 class="font-display" style="font-size: 2rem; color: #FFF; margin-top: 12px; text-transform: uppercase;">Monolithic Superstructure &amp; Core</h2>
+            <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6; margin-top: 14px;">
+              The structural spine of each tower rises via hydraulic self-climbing slipform systems. Ultra-high performance C90 concrete with post-tensioned tendon arrays provides unmatched lateral rigidity, while outrigger trusses bridge the core directly to perimeter columns.
+            </p>
+
+            <div style="margin-top: 24px; display: grid; grid-template-columns: 1fr 1fr; gap: 12px; font-family: var(--font-mono); font-size: 0.75rem;">
+              <div style="background: rgba(13, 14, 17, 0.6); padding: 12px; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+                <span class="text-muted" style="display: block;">CORE RIGIDITY</span>
+                <strong style="color: var(--accent-cyan); font-size: 0.9rem;">C90 COMPRESSIVE RATING</strong>
+              </div>
+              <div style="background: rgba(13, 14, 17, 0.6); padding: 12px; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+                <span class="text-muted" style="display: block;">SLIPFORM SPEED</span>
+                <strong style="color: #FFF; font-size: 0.9rem;">3.8 DAYS PER STOREY</strong>
+              </div>
+              <div style="background: rgba(13, 14, 17, 0.6); padding: 12px; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+                <span class="text-muted" style="display: block;">COLUMN-FREE PLATES</span>
+                <strong style="color: #FFF; font-size: 0.9rem;">UP TO 18M SPANS</strong>
+              </div>
+              <div style="background: rgba(13, 14, 17, 0.6); padding: 12px; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+                <span class="text-muted" style="display: block;">PLUMB PLACEMENT</span>
+                <strong style="color: var(--accent-gold); font-size: 0.9rem;">&plusmn;1.5 MM LASER GUIDED</strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="process-card-blueprint-graphic">
+            <span style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--accent-cyan);">SCHEMATIC 02.B // SLIPFORM SHEAR CORE &amp; OUTRIGGERS</span>
+            <svg viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="150" y="20" width="100" height="160" fill="rgba(0, 229, 255, 0.08)" stroke="#00E5FF" stroke-width="1.5"/>
+              <line x1="150" y1="20" x2="250" y2="180" stroke="#00E5FF" stroke-width="0.8"/>
+              <line x1="250" y1="20" x2="150" y2="180" stroke="#00E5FF" stroke-width="0.8"/>
+              <text x="165" y="105" fill="#FFF" font-family="monospace" font-size="10">C90 SHEAR CORE</text>
+              <!-- Slabs -->
+              <line x1="60" y1="60" x2="340" y2="60" stroke="#FFB84D" stroke-width="1.5"/>
+              <line x1="60" y1="100" x2="340" y2="100" stroke="#FFB84D" stroke-width="1.5"/>
+              <line x1="60" y1="140" x2="340" y2="140" stroke="#FFB84D" stroke-width="1.5"/>
+              <!-- Outriggers -->
+              <line x1="60" y1="100" x2="150" y2="60" stroke="#FFD07B" stroke-width="2"/>
+              <line x1="340" y1="100" x2="250" y2="60" stroke="#FFD07B" stroke-width="2"/>
+              <text x="65" y="52" fill="#FFB84D" font-family="monospace" font-size="9">STOREY 32</text>
+              <text x="65" y="92" fill="#FFB84D" font-family="monospace" font-size="9">STOREY 24</text>
+              <text x="65" y="132" fill="#FFB84D" font-family="monospace" font-size="9">STOREY 16</text>
+            </svg>
+            <span style="font-family: var(--font-mono); font-size: 0.68rem; color: var(--text-muted);">OUTRIGGER TRUSS LOAD TRANSFER SYSTEM</span>
+          </div>
+        </article>
+
+        <!-- Phase 03 -->
+        <article class="process-deep-card">
+          <div>
+            <span class="bp-hud-badge" style="color: var(--accent-gold); border-color: rgba(255,184,77,0.4);">PHASE 03 // ENVELOPE &amp; DAMPING</span>
+            <h2 class="font-display" style="font-size: 2rem; color: #FFF; margin-top: 12px; text-transform: uppercase;">Parametric Façade &amp; 450T TMD</h2>
+            <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6; margin-top: 14px;">
+              Envelope installation occurs synchronously with superstructure ascent. Wind-tunnel optimized bronze louvers shed vortex shedding, while a 450-tonne pendular tuned mass damper suspended on the 54th floor dampens harmonic building resonance.
+            </p>
+
+            <div style="margin-top: 24px; display: grid; grid-template-columns: 1fr 1fr; gap: 12px; font-family: var(--font-mono); font-size: 0.75rem;">
+              <div style="background: rgba(13, 14, 17, 0.6); padding: 12px; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+                <span class="text-muted" style="display: block;">DAMPING MASS</span>
+                <strong style="color: var(--accent-cyan); font-size: 0.9rem;">450 TONNES PENDULAR</strong>
+              </div>
+              <div style="background: rgba(13, 14, 17, 0.6); padding: 12px; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+                <span class="text-muted" style="display: block;">THERMAL U-VALUE</span>
+                <strong style="color: #FFF; font-size: 0.9rem;">0.8 W/M²K TRIPLE GLAZED</strong>
+              </div>
+              <div style="background: rgba(13, 14, 17, 0.6); padding: 12px; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+                <span class="text-muted" style="display: block;">ACOUSTIC LOSS</span>
+                <strong style="color: #FFF; font-size: 0.9rem;">48 DB DUAL CAVITY</strong>
+              </div>
+              <div style="background: rgba(13, 14, 17, 0.6); padding: 12px; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+                <span class="text-muted" style="display: block;">WIND DEFLECTION</span>
+                <strong style="color: var(--accent-gold); font-size: 0.9rem;">-38% VORTEX SHEDDING</strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="process-card-blueprint-graphic">
+            <span style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--accent-cyan);">SCHEMATIC 03.C // HARMONIC TMD SWAY &amp; WIND BOUNDARY</span>
+            <svg viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M40 30 Q120 70 200 40 T360 80" stroke="#00E5FF" stroke-width="1.2" stroke-dasharray="3 3"/>
+              <path d="M40 70 Q120 110 200 80 T360 120" stroke="#00E5FF" stroke-width="1.2" stroke-dasharray="3 3"/>
+              <text x="45" y="24" fill="#00E5FF" font-family="monospace" font-size="9">VORTEX WIND VECTORS</text>
+              <!-- TMD Rig -->
+              <line x1="200" y1="30" x2="200" y2="120" stroke="#FFB84D" stroke-width="2"/>
+              <circle cx="200" cy="120" r="28" fill="rgba(255, 184, 77, 0.2)" stroke="#FFB84D" stroke-width="2.5"/>
+              <text x="180" y="125" fill="#FFF" font-family="monospace" font-size="11">450T</text>
+              <!-- Hydraulic Dampers -->
+              <line x1="120" y1="120" x2="172" y2="120" stroke="#00E5FF" stroke-width="2"/>
+              <line x1="228" y1="120" x2="280" y2="120" stroke="#00E5FF" stroke-width="2"/>
+              <text x="125" y="145" fill="#94A3B8" font-family="monospace" font-size="9">VISCOUS DAMPERS</text>
+            </svg>
+            <span style="font-family: var(--font-mono); font-size: 0.68rem; color: var(--text-muted);">CROSS-SECTION: 54TH FLOOR HARMONIC DAMPER CHAMBER</span>
+          </div>
+        </article>
+
+        <!-- Phase 04 -->
+        <article class="process-deep-card">
+          <div>
+            <span class="bp-hud-badge" style="color: var(--accent-gold); border-color: rgba(255,184,77,0.4);">PHASE 04 // COMMISSIONING</span>
+            <h2 class="font-display" style="font-size: 2rem; color: #FFF; margin-top: 12px; text-transform: uppercase;">Turnkey Turnover &amp; Bespoke Commissioning</h2>
+            <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6; margin-top: 14px;">
+              The handover stage marks the seamless integration of raw monumentality and acoustic luxury. Floating floor cassettes, vein-matched Roman travertine slabs, and calibrated smart-climate environmental systems are certified to 100% turnkey completion.
+            </p>
+
+            <div style="margin-top: 24px; display: grid; grid-template-columns: 1fr 1fr; gap: 12px; font-family: var(--font-mono); font-size: 0.75rem;">
+              <div style="background: rgba(13, 14, 17, 0.6); padding: 12px; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+                <span class="text-muted" style="display: block;">COMMISSIONING CYCLE</span>
+                <strong style="color: var(--accent-cyan); font-size: 0.9rem;">90-DAY CERTIFICATION</strong>
+              </div>
+              <div style="background: rgba(13, 14, 17, 0.6); padding: 12px; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+                <span class="text-muted" style="display: block;">ACOUSTIC ISOLATION</span>
+                <strong style="color: #FFF; font-size: 0.9rem;">STC 65 FLOATING SLABS</strong>
+              </div>
+              <div style="background: rgba(13, 14, 17, 0.6); padding: 12px; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+                <span class="text-muted" style="display: block;">AIR FILTRATION</span>
+                <strong style="color: #FFF; font-size: 0.9rem;">HEPA 14 INTEGRATED BMS</strong>
+              </div>
+              <div style="background: rgba(13, 14, 17, 0.6); padding: 12px; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+                <span class="text-muted" style="display: block;">TURNOVER ACCURACY</span>
+                <strong style="color: var(--accent-gold); font-size: 0.9rem;">100% ZERO-PUNCHLIST</strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="process-card-blueprint-graphic">
+            <span style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--accent-cyan);">SCHEMATIC 04.D // ACOUSTIC DECOUPLING CASSETTE</span>
+            <svg viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="50" y="40" width="300" height="20" fill="rgba(255, 184, 77, 0.15)" stroke="#FFB84D" stroke-width="1.2"/>
+              <text x="90" y="54" fill="#FFD07B" font-family="monospace" font-size="10">ROMAN VEIN-CUT TRAVERTINE (30MM)</text>
+              <rect x="50" y="65" width="300" height="15" fill="rgba(0, 229, 255, 0.12)" stroke="#00E5FF" stroke-width="1.2"/>
+              <text x="110" y="76" fill="#00E5FF" font-family="monospace" font-size="9">ELASTOMERIC ACOUSTIC MAT</text>
+              <!-- Springs / Isolators -->
+              <circle cx="80" cy="95" r="8" stroke="#FFB84D" stroke-width="1.5"/>
+              <circle cx="160" cy="95" r="8" stroke="#FFB84D" stroke-width="1.5"/>
+              <circle cx="240" cy="95" r="8" stroke="#FFB84D" stroke-width="1.5"/>
+              <circle cx="320" cy="95" r="8" stroke="#FFB84D" stroke-width="1.5"/>
+              <rect x="50" y="115" width="300" height="40" fill="rgba(255, 255, 255, 0.05)" stroke="rgba(255, 255, 255, 0.3)" stroke-width="1.2"/>
+              <text x="100" y="140" fill="#FFF" font-family="monospace" font-size="10">POST-TENSIONED CONCRETE SLAB</text>
+            </svg>
+            <span style="font-family: var(--font-mono); font-size: 0.68rem; color: var(--text-muted);">DETAIL: FLOATING LUXURY ACOUSTIC FLOOR ASSEMBLY</span>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- WARM TRAVERTINE LIGHT EDITORIAL CONTRAST SECTION -->
+  <section class="section-wrapper section-travertine-light" style="padding: 80px 0;">
+    <div class="container">
+      <div class="section-header" style="margin-bottom: 40px;">
+        <span class="crosshair-corner top-left" style="color: #8E6838;">+</span>
+        <span class="crosshair-corner top-right" style="color: #8E6838;">+</span>
+        <span class="section-overline" style="color: #8E6838;">MATERIALITY &bull; CARBON DISCIPLINE</span>
+        <h2 class="section-title" style="color: #121316;">Material Integrity &amp; Ecological Tolerance</h2>
+        <p class="section-desc" style="color: #4E5158;">
+          STRATAFORM merges geological permanence with circular engineering: low-carbon geopolymers, thermal travertine heat sinks, and 100% recyclable structural alloys.
+        </p>
+      </div>
+
+      <div class="process-grid phases-grid materials-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px;">
+        <div style="background: #FFF; border: 1px solid rgba(18, 19, 22, 0.1); border-radius: var(--radius-sm); overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.04);">
+          <div style="height: 180px; overflow: hidden;">
+            <img src="./assets/mat-travertine.jpg" alt="Roman Vein-Cut Travertine" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <div style="padding: 24px;">
+            <span style="font-family: var(--font-mono); font-size: 0.68rem; color: #8E6838; letter-spacing: 0.14em; text-transform: uppercase;">GEOLOGICAL THERMAL ENVELOPE</span>
+            <h3 style="font-family: var(--font-display); font-size: 1.25rem; color: #121316; margin: 8px 0;">Tivoli Vein-Cut Travertine</h3>
+            <p style="font-size: 0.86rem; color: #4E5158; line-height: 1.6;">High-density porous limestone quarried parallel to bedding planes, providing superior passive thermal massing and acoustic decoupling.</p>
+          </div>
+        </div>
+
+        <div style="background: #FFF; border: 1px solid rgba(18, 19, 22, 0.1); border-radius: var(--radius-sm); overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.04);">
+          <div style="height: 180px; overflow: hidden;">
+            <img src="./assets/mat-bronze.jpg" alt="Brushed Architectural Bronze" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <div style="padding: 24px;">
+            <span style="font-family: var(--font-mono); font-size: 0.68rem; color: #8E6838; letter-spacing: 0.14em; text-transform: uppercase;">CORROSION-IMMUNE FACADE MULLIONS</span>
+            <h3 style="font-family: var(--font-display); font-size: 1.25rem; color: #121316; margin: 8px 0;">Brushed Architectural Bronze</h3>
+            <p style="font-size: 0.86rem; color: #4E5158; line-height: 1.6;">Precision-extruded architectural bronze profiles that develop a self-healing protective patina resistant to marine saline atmosphere.</p>
+          </div>
+        </div>
+
+        <div style="background: #FFF; border: 1px solid rgba(18, 19, 22, 0.1); border-radius: var(--radius-sm); overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.04);">
+          <div style="height: 180px; overflow: hidden;">
+            <img src="./assets/mat-concrete.jpg" alt="Ultra-High Performance Concrete" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <div style="padding: 24px;">
+            <span style="font-family: var(--font-mono); font-size: 0.68rem; color: #8E6838; letter-spacing: 0.14em; text-transform: uppercase;">MONOLITHIC STRUCTURAL SPINES</span>
+            <h3 style="font-family: var(--font-display); font-size: 1.25rem; color: #121316; margin: 8px 0;">C90/105 Low-Carbon Slag Matrix</h3>
+            <p style="font-size: 0.86rem; color: #4E5158; line-height: 1.6;">Self-compacting geopolymer concrete incorporating 65% ground granulated blast-furnace slag, slashing embodied carbon by 52%.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="section-wrapper" style="padding: 60px 0 100px; border-top: 1px solid var(--border-subtle);">
+    <div class="container" style="text-align: center;">
+      <span class="corner-micro-label" style="color: var(--accent-gold);">SINGLE-SOURCE RIGOR</span>
+      <h2 class="font-display" style="font-size: clamp(2rem, 4vw, 3.2rem); text-transform: uppercase; margin-top: 10px; color: #FFF;">
+        Ready to Commission Your Landmark?
+      </h2>
+      <p style="color: var(--text-secondary); max-width: 600px; margin: 16px auto 32px;">
+        Connect directly with our senior structural directors for confidential feasibility and timeline estimation.
+      </p>
+      <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
+        <a href="inquire.html" class="btn-primary magnetic-btn">Start Feasibility Consultation &rarr;</a>
+        <a href="work.html" class="btn-secondary magnetic-btn">Explore Portfolio Works &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ARCHITECTURAL FOOTER -->
+  <footer class="architectural-footer">
+    <div class="footer-giant-watermark">STRATAFORM</div>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <span class="brand-name" style="font-size: 1.3rem;">STRATAFORM</span>
+          <p class="footer-tagline">Architecture in Motion. Built from the Ground Up.</p>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="blueprint.html">Blueprint</a></li>
+            <li><a href="process.html">Process</a></li>
+            <li><a href="studio.html">Studio</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Disciplines</h4>
+          <ul class="footer-links-list">
+            <li><a href="blueprint.html">Deep Foundations (-32M)</a></li>
+            <li><a href="blueprint.html">Tuned Mass Dampers (+310M)</a></li>
+            <li><a href="process.html">Parametric Façades</a></li>
+            <li><a href="inquire.html">Turnkey Commissioning</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Global Presence</h4>
+          <div class="office-clock-item"><span class="office-city">Zurich</span><span class="office-time" id="clock-zurich">--:--</span></div>
+          <div class="office-clock-item"><span class="office-city">London</span><span class="office-time" id="clock-london">--:--</span></div>
+          <div class="office-clock-item"><span class="office-city">New York</span><span class="office-time" id="clock-newyork">--:--</span></div>
+          <div class="office-clock-item"><span class="office-city">Tokyo</span><span class="office-time" id="clock-tokyo">--:--</span></div>
+          <div class="office-clock-item"><span class="office-city">Dubai</span><span class="office-time" id="clock-dubai">--:--</span></div>
+        </div>
+      </div>
+      <div class="footer-bottom-bar">
+        <span>&copy; 2026 STRATAFORM S.A. All rights reserved.</span>
+        <button class="back-to-top-btn magnetic-btn" id="back-to-top-btn">Apex &uarr;</button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Local Zero-Latency Script Libraries -->
+  <script src="./libs/lenis.min.js"></script>
+  <script src="./libs/gsap.min.js"></script>
+  <script src="./libs/ScrollTrigger.min.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>

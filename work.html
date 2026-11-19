@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selected Works — STRATAFORM Portfolio</title>
+  <meta name="description" content="Explore STRATAFORM's portfolio of supertall towers, commercial headquarters, and cultural pavilions built from raw earth to skyline.">
+
+  <!-- Google Fonts: Syne, Plus Jakarta Sans, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Syne:wght@700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body data-page="work">
+
+  <!-- Subtle Blueprint Grid Overlay -->
+  <div class="blueprint-grid-overlay" aria-hidden="true"></div>
+
+  <!-- Custom Precision Cursor Follower -->
+  <div class="custom-cursor" id="custom-cursor" aria-hidden="true"></div>
+  <div class="custom-cursor-follower" id="custom-cursor-follower" aria-hidden="true"></div>
+
+  <!-- TOP NAVBAR -->
+  <nav class="navbar" id="main-navbar">
+    <div class="nav-scroll-indicator" id="nav-scroll-indicator"></div>
+
+    <a href="index.html" class="brand-link">
+      <svg class="brand-monogram" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="STRATAFORM">
+        <path class="logo-draw-path" d="M24 4L42 14.4V35.2L24 45.6L6 35.2V14.4L24 4Z" stroke="#FFB84D" stroke-width="1.8" stroke-linejoin="round"/>
+        <path class="logo-draw-path" d="M24 4V45.6" stroke="#FFB84D" stroke-width="1.2"/>
+        <path class="logo-draw-path" d="M6 14.4L24 24.8L42 14.4" stroke="#FFD07B" stroke-width="1.2"/>
+        <path class="logo-draw-path" d="M24 24.8V45.6" stroke="#FF5A36" stroke-width="1.5"/>
+      </svg>
+      <span class="brand-name">STRATAFORM</span>
+    </a>
+
+    <!-- Top Menu Links -->
+    <ul class="nav-menu" id="nav-menu">
+      <li class="nav-item" data-nav="home"><a href="index.html" class="magnetic-btn">Home</a></li>
+      <li class="nav-item active" data-nav="work"><a href="work.html" class="magnetic-btn">Work</a></li>
+      <li class="nav-item" data-nav="blueprint"><a href="blueprint.html" class="magnetic-btn">Blueprint</a></li>
+      <li class="nav-item" data-nav="process"><a href="process.html" class="magnetic-btn">Process</a></li>
+      <li class="nav-item" data-nav="studio"><a href="studio.html" class="magnetic-btn">Studio</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <a href="inquire.html" class="btn-inquire magnetic-btn">Inquire</a>
+      <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle Navigation Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Full-Screen Glass Mobile Menu Drawer -->
+  <div class="mobile-nav-drawer" id="mobile-nav-drawer" aria-hidden="true" data-lenis-prevent>
+    <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(255, 255, 255, 0.08); padding-bottom: 20px;">
+      <span class="brand-name" style="font-size: 1.1rem; color: var(--accent-gold);">STRATAFORM</span>
+      <span style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--accent-cyan);">PORTFOLIO // 02</span>
+    </div>
+
+    <ul class="mobile-nav-list">
+      <li class="mobile-nav-item"><a href="index.html" class="mobile-nav-link" data-nav="home"><span>Home</span><span class="mobile-link-num">01</span></a></li>
+      <li class="mobile-nav-item"><a href="work.html" class="mobile-nav-link active" data-nav="work"><span>Work</span><span class="mobile-link-num">02</span></a></li>
+      <li class="mobile-nav-item"><a href="blueprint.html" class="mobile-nav-link" data-nav="blueprint"><span>Blueprint</span><span class="mobile-link-num">03</span></a></li>
+      <li class="mobile-nav-item"><a href="process.html" class="mobile-nav-link" data-nav="process"><span>Process</span><span class="mobile-link-num">04</span></a></li>
+      <li class="mobile-nav-item"><a href="studio.html" class="mobile-nav-link" data-nav="studio"><span>Studio</span><span class="mobile-link-num">05</span></a></li>
+    </ul>
+
+    <div class="mobile-drawer-footer">
+      <a href="inquire.html" class="btn-primary" style="width: 100%;">Inquire for Consultation &rarr;</a>
+      <div style="display: flex; justify-content: space-between; font-family: var(--font-mono); font-size: 0.7rem; color: var(--text-muted);">
+        <span>ZURICH &bull; LONDON &bull; NYC</span>
+        <span>&copy; 2026 STRATAFORM</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- PAGE HERO -->
+  <header class="page-hero">
+    <div class="container">
+      <div class="page-hero-breadcrumbs">
+        <span>STRATAFORM</span>
+        <span>/</span>
+        <span>PORTFOLIO DOSSIER</span>
+        <span>/</span>
+        <span style="color: var(--accent-cyan);">GLOBAL COMMISSION REGISTRY</span>
+      </div>
+      <h1 class="page-hero-title">Selected Works</h1>
+      <p class="page-hero-subtitle">
+        Monolithic supertall structures, aerodynamic envelopes, and cultural pavilions engineered to millimeter tolerances across global capitals.
+      </p>
+
+      <div class="page-hero-stats">
+        <div class="hero-stat-badge">
+          <span class="hero-stat-label">TOTAL PORTFOLIO GFA</span>
+          <span class="hero-stat-val">4.2M SQ. FT.</span>
+        </div>
+        <div class="hero-stat-badge">
+          <span class="hero-stat-label">MAX APEX DELIVERED</span>
+          <span class="hero-stat-val" style="color: var(--accent-cyan);">+442.0M</span>
+        </div>
+        <div class="hero-stat-badge">
+          <span class="hero-stat-label">COMMISSION STATUS</span>
+          <span class="hero-stat-val">100% ON SCHEDULE</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- PORTFOLIO SECTION -->
+  <main class="section-wrapper" id="portfolio-section" style="padding-top: 48px;">
+    <div class="container">
+
+      <!-- Filter Controls -->
+      <div class="portfolio-filter-bar">
+        <button class="filter-btn active" data-filter="all">All Disciplines (06)</button>
+        <button class="filter-btn" data-filter="commercial">Commercial HQ</button>
+        <button class="filter-btn" data-filter="residential">Supertall Residential</button>
+        <button class="filter-btn" data-filter="cultural">Cultural Pavilions</button>
+        <button class="filter-btn" data-filter="mixed">Mixed-Use Cantilevers</button>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="portfolio-grid">
+
+        <!-- Project 1 -->
+        <article class="project-card" data-category="commercial" data-project-id="obsidian">
+          <div class="project-card-media">
+            <div class="card-curtain-reveal">
+              <img src="./assets/project-obsidian.jpg" alt="The Obsidian Monolith" loading="lazy">
+            </div>
+            <div class="project-card-glare"></div>
+            <span class="project-category-badge">COMMERCIAL HQ</span>
+          </div>
+          <div class="project-card-content">
+            <span class="project-location-label">LONDON &bull; 68 STOREYS &bull; COMMISSIONED 2025</span>
+            <h3 class="project-card-title">The Obsidian Monolith</h3>
+            <p class="project-card-desc">An external diagrid eliminates interior columns, unlocking 360-degree metropolitan panoramas over the City of London.</p>
+            <div class="project-card-footer">
+              <span class="project-spec-item" style="color: var(--accent-cyan);">LEED Platinum</span>
+              <button class="project-expand-link open-modal-trigger magnetic-btn" data-target="obsidian" data-project-id="obsidian">Dossier &rarr;</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card" data-category="residential" data-project-id="aura">
+          <div class="project-card-media">
+            <div class="card-curtain-reveal">
+              <img src="./assets/project-aura.jpg" alt="Aura Sky Residence" loading="lazy">
+            </div>
+            <div class="project-card-glare"></div>
+            <span class="project-category-badge">SUPERTALL RESIDENTIAL</span>
+          </div>
+          <div class="project-card-content">
+            <span class="project-location-label">SINGAPORE &bull; 74 STOREYS &bull; COMMISSIONED 2024</span>
+            <h3 class="project-card-title">Aura Sky Residence</h3>
+            <p class="project-card-desc">Cascading biophilic sky-gardens anchored by a central post-tensioned shear core, engineered for equatorial seismic resilience.</p>
+            <div class="project-card-footer">
+              <span class="project-spec-item" style="color: var(--accent-cyan);">BCA Green Mark Platinum</span>
+              <button class="project-expand-link open-modal-trigger magnetic-btn" data-target="aura" data-project-id="aura">Dossier &rarr;</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card" data-category="cultural" data-project-id="travertine">
+          <div class="project-card-media">
+            <div class="card-curtain-reveal">
+              <img src="./assets/project-travertine.jpg" alt="The Travertine Pavilion" loading="lazy">
+            </div>
+            <div class="project-card-glare"></div>
+            <span class="project-category-badge">CULTURAL PAVILION</span>
+          </div>
+          <div class="project-card-content">
+            <span class="project-location-label">ZURICH &bull; 12 STOREYS &bull; COMMISSIONED 2024</span>
+            <h3 class="project-card-title">The Travertine Pavilion</h3>
+            <p class="project-card-desc">Monolithic blocks of Roman vein-cut travertine paired with knife-edge bronze louvers overlooking Lake Zurich.</p>
+            <div class="project-card-footer">
+              <span class="project-spec-item" style="color: var(--accent-cyan);">Minergie-P Eco</span>
+              <button class="project-expand-link open-modal-trigger magnetic-btn" data-target="travertine" data-project-id="travertine">Dossier &rarr;</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="project-card" data-category="mixed" data-project-id="helix">
+          <div class="project-card-media">
+            <div class="card-curtain-reveal">
+              <img src="./assets/project-helix.jpg" alt="Helix Cantilever Tower" loading="lazy">
+            </div>
+            <div class="project-card-glare"></div>
+            <span class="project-category-badge">MIXED-USE CANTILEVER</span>
+          </div>
+          <div class="project-card-content">
+            <span class="project-location-label">TOKYO &bull; 54 STOREYS &bull; COMMISSIONED 2025</span>
+            <h3 class="project-card-title">Helix Cantilever Tower</h3>
+            <p class="project-card-desc">A dramatic 24-meter suspended cantilever volume hovering over Roppongi, balanced by dual tuned liquid mass dampers.</p>
+            <div class="project-card-footer">
+              <span class="project-spec-item" style="color: var(--accent-cyan);">Level 4 Seismic Rated</span>
+              <button class="project-expand-link open-modal-trigger magnetic-btn" data-target="helix" data-project-id="helix">Dossier &rarr;</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 5 -->
+        <article class="project-card" data-category="commercial" data-project-id="solaris">
+          <div class="project-card-media">
+            <div class="card-curtain-reveal">
+              <img src="./assets/project-solaris.jpg" alt="Solaris Financial Spire" loading="lazy">
+            </div>
+            <div class="project-card-glare"></div>
+            <span class="project-category-badge">COMMERCIAL SPIRE</span>
+          </div>
+          <div class="project-card-content">
+            <span class="project-location-label">DUBAI &bull; 92 STOREYS &bull; COMMISSIONED 2026</span>
+            <h3 class="project-card-title">Solaris Financial Spire</h3>
+            <p class="project-card-desc">Vortex-shedding aerodynamic tapering envelope reducing crosswind drag by 38% in the extreme Arabian Gulf climate.</p>
+            <div class="project-card-footer">
+              <span class="project-spec-item" style="color: var(--accent-cyan);">450T TMD Summit</span>
+              <button class="project-expand-link open-modal-trigger magnetic-btn" data-target="solaris" data-project-id="solaris">Dossier &rarr;</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 6 -->
+        <article class="project-card" data-category="residential" data-project-id="zenith">
+          <div class="project-card-media">
+            <div class="card-curtain-reveal">
+              <img src="./assets/project-zenith.jpg" alt="Zenith Supertall" loading="lazy">
+            </div>
+            <div class="project-card-glare"></div>
+            <span class="project-category-badge">SUPERTALL RESIDENTIAL</span>
+          </div>
+          <div class="project-card-content">
+            <span class="project-location-label">NEW YORK &bull; 104 STOREYS &bull; COMMISSIONED 2026</span>
+            <h3 class="project-card-title">Zenith Supertall</h3>
+            <p class="project-card-desc">A 1:18 aspect-ratio pencil tower anchored by 40-meter bored bedrock sockets in Manhattan mica schist.</p>
+            <div class="project-card-footer">
+              <span class="project-spec-item" style="color: var(--accent-cyan);">Turnkey Delivery</span>
+              <button class="project-expand-link open-modal-trigger magnetic-btn" data-target="zenith" data-project-id="zenith">Dossier &rarr;</button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- ROLLING SLOT-MACHINE ODOMETER METRICS -->
+  <section id="metrics-section">
+    <div class="container">
+      <div class="metrics-grid">
+        <div class="metric-card">
+          <div class="odometer-display">
+            <div class="odometer-digit-reel"><div class="odometer-digit-strip"><span>0</span><span>1</span><span>2</span><span>3</span></div></div>
+            <div class="odometer-digit-reel"><div class="odometer-digit-strip"><span>0</span><span>4</span><span>7</span><span>8</span></div></div>
+            <span class="odometer-suffix">+</span>
+          </div>
+          <span class="metric-label">MAJOR LANDMARKS DELIVERED</span>
+        </div>
+
+        <div class="metric-card">
+          <div class="odometer-display">
+            <div class="odometer-digit-reel"><div class="odometer-digit-strip"><span>0</span><span>7</span><span>8</span><span>9</span></div></div>
+            <div class="odometer-digit-reel"><div class="odometer-digit-strip"><span>0</span><span>5</span><span>8</span><span>9</span></div></div>
+            <span class="odometer-dot">.</span>
+            <div class="odometer-digit-reel"><div class="odometer-digit-strip"><span>0</span><span>2</span><span>3</span><span>4</span></div></div>
+            <span class="odometer-suffix">%</span>
+          </div>
+          <span class="metric-label">ON-TIME COMMISSIONING RATE</span>
+        </div>
+
+        <div class="metric-card">
+          <div class="odometer-display">
+            <div class="odometer-digit-reel"><div class="odometer-digit-strip"><span>0</span><span>1</span><span>3</span><span>4</span></div></div>
+            <span class="odometer-dot">.</span>
+            <div class="odometer-digit-reel"><div class="odometer-digit-strip"><span>0</span><span>1</span><span>2</span><span>2</span></div></div>
+            <span class="odometer-suffix">M</span>
+          </div>
+          <span class="metric-label">GROSS SQ. FT. CONSTRUCTED</span>
+        </div>
+
+        <div class="metric-card">
+          <div class="odometer-display">
+            <div class="odometer-digit-reel"><div class="odometer-digit-strip"><span>0</span><span>0</span></div></div>
+            <span class="odometer-dot">.</span>
+            <div class="odometer-digit-reel"><div class="odometer-digit-strip"><span>0</span><span>0</span></div></div>
+            <div class="odometer-digit-reel"><div class="odometer-digit-strip"><span>0</span><span>0</span></div></div>
+            <span class="odometer-suffix">mm</span>
+          </div>
+          <span class="metric-label">STRUCTURAL CORE TOLERANCE</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECT DOSSIER MODAL -->
+  <div class="project-modal-backdrop" id="project-modal" data-lenis-prevent>
+    <div class="project-modal-card" data-lenis-prevent>
+      <button class="modal-close-btn magnetic-btn" id="close-modal-btn">&times;</button>
+      <span class="corner-micro-label" id="modal-project-code">STF-LDN // 01</span>
+      <h2 class="font-display" id="modal-project-title" style="font-size: 1.8rem; margin-top: 4px; color: #FFF;">The Obsidian Monolith</h2>
+      <p class="font-mono text-muted" id="modal-project-location" style="font-size: 0.75rem; margin-top: 2px;">LONDON &bull; COMMISSIONED 2025</p>
+
+      <div class="modal-hero-image">
+        <img id="modal-project-img" src="./assets/project-obsidian.jpg" alt="Project Overview">
+      </div>
+
+      <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6;" id="modal-project-desc">
+        A 68-storey commercial landmark featuring an external diagrid that eliminates internal perimeter columns, affording uninterrupted 360-degree metropolitan panoramas.
+      </p>
+
+      <table class="modal-specs-table">
+        <tbody>
+          <tr><td>STRUCTURAL SYSTEM</td><td id="modal-spec-system">Steel Diagrid + Post-Tensioned C90 Core</td></tr>
+          <tr><td>FOUNDATION SOCKETING</td><td id="modal-spec-foundation">38m Bored Bedrock Piles</td></tr>
+          <tr><td>DAMPING SYSTEM</td><td id="modal-spec-damping">Tuned Liquid Column Damper</td></tr>
+          <tr><td>FAÇADE &amp; GLAZING</td><td id="modal-spec-glazing">Acoustic Triple-Glazed Low-E Cavity Curtain Wall</td></tr>
+          <tr><td>SCALE &amp; ELEVATION</td><td id="modal-spec-height">68 Storeys // 312 Meters</td></tr>
+          <tr><td>ENVIRONMENTAL TIER</td><td id="modal-spec-leed">LEED Platinum Certified</td></tr>
+        </tbody>
+      </table>
+
+      <div style="margin-top: 24px; display: flex; gap: 12px; flex-wrap: wrap;">
+        <a href="inquire.html" class="btn-primary magnetic-btn">Request Full Technical Dossier &rarr;</a>
+        <button class="btn-secondary magnetic-btn" id="close-modal-btn-2">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ARCHITECTURAL FOOTER -->
+  <footer class="architectural-footer">
+    <div class="footer-giant-watermark">STRATAFORM</div>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <span class="brand-name" style="font-size: 1.3rem;">STRATAFORM</span>
+          <p class="footer-tagline">Architecture in Motion. Built from the Ground Up.</p>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="blueprint.html">Blueprint</a></li>
+            <li><a href="process.html">Process</a></li>
+            <li><a href="studio.html">Studio</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Disciplines</h4>
+          <ul class="footer-links-list">
+            <li><a href="blueprint.html">Deep Foundations (-32M)</a></li>
+            <li><a href="blueprint.html">Tuned Mass Dampers (+310M)</a></li>
+            <li><a href="process.html">Parametric Façades</a></li>
+            <li><a href="inquire.html">Turnkey Commissioning</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Global Presence</h4>
+          <div class="office-clock-item"><span class="office-city">Zurich</span><span class="office-time" id="clock-zurich">--:--</span></div>
+          <div class="office-clock-item"><span class="office-city">London</span><span class="office-time" id="clock-london">--:--</span></div>
+          <div class="office-clock-item"><span class="office-city">New York</span><span class="office-time" id="clock-newyork">--:--</span></div>
+          <div class="office-clock-item"><span class="office-city">Tokyo</span><span class="office-time" id="clock-tokyo">--:--</span></div>
+          <div class="office-clock-item"><span class="office-city">Dubai</span><span class="office-time" id="clock-dubai">--:--</span></div>
+        </div>
+      </div>
+      <div class="footer-bottom-bar">
+        <span>&copy; 2026 STRATAFORM S.A. All rights reserved.</span>
+        <button class="back-to-top-btn magnetic-btn" id="back-to-top-btn">Apex &uarr;</button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Local Zero-Latency Script Libraries -->
+  <script src="./libs/lenis.min.js"></script>
+  <script src="./libs/gsap.min.js"></script>
+  <script src="./libs/ScrollTrigger.min.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>

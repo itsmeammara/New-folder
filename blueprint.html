@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D Structural Lab — STRATAFORM Engineering</title>
+  <meta name="description" content="Interactive 3D structural engineering lab: explore wireframe skeletons, 450T tuned mass dampers, and parametric facade envelopes.">
+
+  <!-- Google Fonts: Syne, Plus Jakarta Sans, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Syne:wght@700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body data-page="blueprint">
+
+  <!-- Subtle Blueprint Grid Overlay -->
+  <div class="blueprint-grid-overlay" aria-hidden="true"></div>
+
+  <!-- Custom Precision Cursor Follower -->
+  <div class="custom-cursor" id="custom-cursor" aria-hidden="true"></div>
+  <div class="custom-cursor-follower" id="custom-cursor-follower" aria-hidden="true"></div>
+
+  <!-- TOP NAVBAR -->
+  <nav class="navbar" id="main-navbar">
+    <div class="nav-scroll-indicator" id="nav-scroll-indicator"></div>
+
+    <a href="index.html" class="brand-link">
+      <svg class="brand-monogram" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="STRATAFORM">
+        <path class="logo-draw-path" d="M24 4L42 14.4V35.2L24 45.6L6 35.2V14.4L24 4Z" stroke="#FFB84D" stroke-width="1.8" stroke-linejoin="round"/>
+        <path class="logo-draw-path" d="M24 4V45.6" stroke="#FFB84D" stroke-width="1.2"/>
+        <path class="logo-draw-path" d="M6 14.4L24 24.8L42 14.4" stroke="#FFD07B" stroke-width="1.2"/>
+        <path class="logo-draw-path" d="M24 24.8V45.6" stroke="#FF5A36" stroke-width="1.5"/>
+      </svg>
+      <span class="brand-name">STRATAFORM</span>
+    </a>
+
+    <!-- Top Menu Links -->
+    <ul class="nav-menu" id="nav-menu">
+      <li class="nav-item" data-nav="home"><a href="index.html" class="magnetic-btn">Home</a></li>
+      <li class="nav-item" data-nav="work"><a href="work.html" class="magnetic-btn">Work</a></li>
+      <li class="nav-item active" data-nav="blueprint"><a href="blueprint.html" class="magnetic-btn">Blueprint</a></li>
+      <li class="nav-item" data-nav="process"><a href="process.html" class="magnetic-btn">Process</a></li>
+      <li class="nav-item" data-nav="studio"><a href="studio.html" class="magnetic-btn">Studio</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <a href="inquire.html" class="btn-inquire magnetic-btn">Inquire</a>
+      <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle Navigation Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Full-Screen Glass Mobile Menu Drawer -->
+  <div class="mobile-nav-drawer" id="mobile-nav-drawer" aria-hidden="true" data-lenis-prevent>
+    <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(255, 255, 255, 0.08); padding-bottom: 20px;">
+      <span class="brand-name" style="font-size: 1.1rem; color: var(--accent-gold);">STRATAFORM</span>
+      <span style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--accent-cyan);">LAB // 03</span>
+    </div>
+
+    <ul class="mobile-nav-list">
+      <li class="mobile-nav-item"><a href="index.html" class="mobile-nav-link" data-nav="home"><span>Home</span><span class="mobile-link-num">01</span></a></li>
+      <li class="mobile-nav-item"><a href="work.html" class="mobile-nav-link" data-nav="work"><span>Work</span><span class="mobile-link-num">02</span></a></li>
+      <li class="mobile-nav-item"><a href="blueprint.html" class="mobile-nav-link active" data-nav="blueprint"><span>Blueprint</span><span class="mobile-link-num">03</span></a></li>
+      <li class="mobile-nav-item"><a href="process.html" class="mobile-nav-link" data-nav="process"><span>Process</span><span class="mobile-link-num">04</span></a></li>
+      <li class="mobile-nav-item"><a href="studio.html" class="mobile-nav-link" data-nav="studio"><span>Studio</span><span class="mobile-link-num">05</span></a></li>
+    </ul>
+
+    <div class="mobile-drawer-footer">
+      <a href="inquire.html" class="btn-primary" style="width: 100%;">Inquire for Consultation &rarr;</a>
+      <div style="display: flex; justify-content: space-between; font-family: var(--font-mono); font-size: 0.7rem; color: var(--text-muted);">
+        <span>ZURICH &bull; LONDON &bull; NYC</span>
+        <span>&copy; 2026 STRATAFORM</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- PAGE HERO -->
+  <header class="page-hero">
+    <div class="container">
+      <div class="page-hero-breadcrumbs">
+        <span>STRATAFORM</span>
+        <span>/</span>
+        <span>STRUCTURAL LAB</span>
+        <span>/</span>
+        <span style="color: var(--accent-cyan);">COMPUTATIONAL ENGINE</span>
+      </div>
+      <h1 class="page-hero-title">3D Structural Engineering Lab</h1>
+      <p class="page-hero-subtitle">
+        Direct telemetry, wind-load simulation, and multi-layer structural dissection of a 60-storey post-tensioned supertall tower.
+      </p>
+
+      <div class="page-hero-stats">
+        <div class="hero-stat-badge">
+          <span class="hero-stat-label">TUNED MASS DAMPER</span>
+          <span class="hero-stat-val" style="color: var(--accent-cyan);">450 TONNES // LVL 54</span>
+        </div>
+        <div class="hero-stat-badge">
+          <span class="hero-stat-label">MAX SWAY MITIGATION</span>
+          <span class="hero-stat-val">-48% ACCELERATION</span>
+        </div>
+        <div class="hero-stat-badge">
+          <span class="hero-stat-label">SEISMIC ISOLATION</span>
+          <span class="hero-stat-val">CATEGORY IV RATED</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- 3D INTERACTIVE LAB VIEWPORT -->
+  <main class="section-wrapper" id="blueprint-section" style="padding: 48px 0 80px;">
+    <div class="container">
+
+      <!-- Viewport Header -->
+      <div class="section-header" style="margin-bottom: 24px;">
+        <span class="section-overline" style="color: var(--accent-cyan);">TELEMETRY LAB // LIVE SIMULATION</span>
+        <h2 class="section-title">The Apex Tower Structural Rig</h2>
+        <p class="section-desc">Click and drag to rotate, toggle structural systems, and simulate extreme wind shears in real time.</p>
+      </div>
+
+      <!-- Main 3D Viewport Box -->
+      <div class="blueprint-viewport-wrapper" style="height: clamp(540px, 70vh, 760px); border-radius: var(--radius-md); border: 1px solid var(--border-bronze); position: relative; overflow: hidden;">
+        
+        <!-- Three.js Canvas Container -->
+        <div id="blueprint-canvas-container" class="blueprint-canvas-container"></div>
+
+        <!-- Interactive Hotspot Pins (Clean Glowing Circular Badge Dots) -->
+        <button class="blueprint-hotspot" id="hotspot-pin-0" style="display: none;" aria-label="Pin 01: Bedrock Piles">
+          <span class="hotspot-pulse"></span>
+          <span class="hotspot-num-badge">01</span>
+        </button>
+
+        <button class="blueprint-hotspot" id="hotspot-pin-1" style="display: none;" aria-label="Pin 02: Cantilever Truss">
+          <span class="hotspot-pulse"></span>
+          <span class="hotspot-num-badge">02</span>
+        </button>
+
+        <button class="blueprint-hotspot" id="hotspot-pin-2" style="display: none;" aria-label="Pin 03: Diagrid Nodes">
+          <span class="hotspot-pulse"></span>
+          <span class="hotspot-num-badge">03</span>
+        </button>
+
+        <button class="blueprint-hotspot" id="hotspot-pin-3" style="display: none;" aria-label="Pin 04: Summit TMD">
+          <span class="hotspot-pulse"></span>
+          <span class="hotspot-num-badge">04</span>
+        </button>
+
+        <!-- Hotspot Telemetry Drawer -->
+        <div class="hotspot-drawer" id="hotspot-drawer" data-lenis-prevent>
+          <button class="drawer-close-btn magnetic-btn" id="close-hotspot-drawer">&times;</button>
+          <span class="corner-micro-label" id="hs-drawer-code">TEL-SEC // 04</span>
+          <h3 class="font-display" id="hs-drawer-title" style="font-size: 1.25rem; margin-top: 6px; color: #FFF;">Summit Tuned Mass Damper</h3>
+          <p style="font-size: 0.82rem; color: var(--text-secondary); margin-top: 10px; line-height: 1.6;" id="hs-drawer-desc">
+            A 450-tonne pendular steel sphere suspended from the 54th floor ceiling via eight hydraulic viscous dampers, reducing summit sway accelerations by 48% during gale-force shears.
+          </p>
+          <div style="margin-top: 18px; border-top: 1px solid var(--border-subtle); padding-top: 14px; font-family: var(--font-mono); font-size: 0.72rem;">
+            <div style="display: flex; justify-content: space-between; margin-bottom: 6px;"><span class="text-muted">OSCILLATION PERIOD:</span><strong style="color: var(--accent-cyan);">6.2 SECONDS</strong></div>
+            <div style="display: flex; justify-content: space-between; margin-bottom: 6px;"><span class="text-muted">MAX DISPLACEMENT:</span><strong style="color: #FFF;">&plusmn;1,250 MM</strong></div>
+            <div style="display: flex; justify-content: space-between;"><span class="text-muted">DAMPING RATIO:</span><strong style="color: var(--accent-gold);">14.5% CRITICAL</strong></div>
+          </div>
+        </div>
+
+        <!-- Viewport Controls Overlay (Layer Toggles & Presets) -->
+        <div class="blueprint-controls-bar" style="position: absolute; bottom: 20px; left: 20px; right: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; pointer-events: none; z-index: 10;">
+          
+          <!-- Layer Toggles -->
+          <div class="layer-toggle-group" style="pointer-events: auto; display: flex; gap: 8px; flex-wrap: wrap; background: rgba(13, 14, 17, 0.75); backdrop-filter: blur(10px); padding: 6px; border-radius: var(--radius-sm); border: 1px solid rgba(255,255,255,0.08);">
+            <button class="layer-btn active magnetic-btn" data-layer="all">All Layers</button>
+            <button class="layer-btn magnetic-btn" data-layer="skeleton">Shear Core &amp; Slabs</button>
+            <button class="layer-btn magnetic-btn" data-layer="mep">MEP Risers</button>
+            <button class="layer-btn magnetic-btn" data-layer="massing">Parametric Envelopes</button>
+          </div>
+
+          <!-- Camera Presets -->
+          <div class="preset-camera-group" style="pointer-events: auto; display: flex; gap: 8px; flex-wrap: wrap; background: rgba(13, 14, 17, 0.75); backdrop-filter: blur(10px); padding: 6px; border-radius: var(--radius-sm); border: 1px solid rgba(255,255,255,0.08);">
+            <button class="preset-btn active magnetic-btn" data-preset="perspective">Perspective</button>
+            <button class="preset-btn magnetic-btn" data-preset="foundation">Foundation -32M</button>
+            <button class="preset-btn magnetic-btn" data-preset="cantilever">Cantilever +120M</button>
+            <button class="preset-btn magnetic-btn" data-preset="tmd">TMD Crown +310M</button>
+            <button class="preset-btn magnetic-btn" id="toggle-autorotate" style="color: var(--accent-gold); border-color: rgba(255,184,77,0.3);">Orbit: ON</button>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- BEFORE / AFTER EVOLUTION SLIDER -->
+  <section class="section-wrapper" id="comparison-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-overline" style="color: var(--accent-cyan);">SPATIAL TRANSFORMATION</span>
+        <h2 class="section-title">Raw Subterranean Core to Turnkey Luxury</h2>
+        <p class="section-desc">Drag the central divider line to inspect the metamorphosis from post-tensioned structural shell to acoustic penthouse turnover.</p>
+      </div>
+
+      <div class="comparison-slider-container" id="comparison-slider">
+        <!-- After: Finished Luxury Penthouse -->
+        <div class="slider-image-layer slider-after">
+          <img src="./assets/interior-finished.jpg" alt="Turnkey Luxury Finished Penthouse" loading="lazy">
+          <span class="slider-badge badge-after">TURNKEY HANDOVER // 100% COMMISSIONED</span>
+        </div>
+
+        <!-- Before: Raw Structural Core -->
+        <div class="slider-image-layer slider-before" id="slider-before-layer">
+          <img src="./assets/construction-raw.jpg" alt="Subterranean Foundation & Shear Core Construction" loading="lazy">
+          <span class="slider-badge badge-before">RAW STRUCTURAL CORE // POST-TENSIONED</span>
+        </div>
+
+        <!-- Center Handle -->
+        <div class="slider-handle" id="slider-handle">
+          <div class="slider-handle-line"></div>
+          <div class="slider-handle-button">
+            <span>&harr;</span>
+          </div>
+          <div class="slider-handle-line"></div>
+        </div>
+      </div>
+
+      <!-- Slider Presets -->
+      <div class="slider-presets-bar">
+        <button class="slider-preset-btn magnetic-btn" data-pos="20">Inspect Core (20%)</button>
+        <button class="slider-preset-btn active magnetic-btn" data-pos="50">Equilibrium (50%)</button>
+        <button class="slider-preset-btn magnetic-btn" data-pos="80">Turnkey Finish (80%)</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="section-wrapper" style="padding: 60px 0 100px; border-top: 1px solid var(--border-subtle);">
+    <div class="container" style="text-align: center;">
+      <span class="corner-micro-label" style="color: var(--accent-cyan);">STRUCTURAL FEASIBILITY</span>
+      <h2 class="font-display" style="font-size: clamp(2rem, 4vw, 3.2rem); text-transform: uppercase; margin-top: 10px; color: #FFF;">
+        Model Your Development in 3D
+      </h2>
+      <p style="color: var(--text-secondary); max-width: 600px; margin: 16px auto 32px;">
+        Calculate tonnage, concrete volume, and structural timelines for your next landmark with our interactive feasibility engine.
+      </p>
+      <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
+        <a href="inquire.html" class="btn-primary magnetic-btn">Open Project Scale Estimator &rarr;</a>
+        <a href="process.html" class="btn-secondary magnetic-btn">View 4-Phase Process &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ARCHITECTURAL FOOTER -->
+  <footer class="architectural-footer">
+    <div class="footer-giant-watermark">STRATAFORM</div>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <span class="brand-name" style="font-size: 1.3rem;">STRATAFORM</span>
+          <p class="footer-tagline">Architecture in Motion. Built from the Ground Up.</p>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="blueprint.html">Blueprint</a></li>
+            <li><a href="process.html">Process</a></li>
+            <li><a href="studio.html">Studio</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Disciplines</h4>
+          <ul class="footer-links-list">
+            <li><a href="blueprint.html">Deep Foundations (-32M)</a></li>
+            <li><a href="blueprint.html">Tuned Mass Dampers (+310M)</a></li>
+            <li><a href="process.html">Parametric Façades</a></li>
+            <li><a href="inquire.html">Turnkey Commissioning</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Global Presence</h4>
+          <div class="office-clock-item"><span class="office-city">Zurich</span><span class="office-time" id="clock-zurich">--:--</span></div>
+          <div class="office-clock-item"><span class="office-city">London</span><span class="office-time" id="clock-london">--:--</span></div>
+          <div class="office-clock-item"><span class="office-city">New York</span><span class="office-time" id="clock-newyork">--:--</span></div>
+          <div class="office-clock-item"><span class="office-city">Tokyo</span><span class="office-time" id="clock-tokyo">--:--</span></div>
+          <div class="office-clock-item"><span class="office-city">Dubai</span><span class="office-time" id="clock-dubai">--:--</span></div>
+        </div>
+      </div>
+      <div class="footer-bottom-bar">
+        <span>&copy; 2026 STRATAFORM S.A. All rights reserved.</span>
+        <button class="back-to-top-btn magnetic-btn" id="back-to-top-btn">Apex &uarr;</button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Local Zero-Latency Script Libraries -->
+  <script src="./libs/lenis.min.js"></script>
+  <script src="./libs/gsap.min.js"></script>
+  <script src="./libs/ScrollTrigger.min.js"></script>
+  <script src="./libs/three.min.js"></script>
+  <script src="./libs/OrbitControls.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
